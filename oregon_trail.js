@@ -3,24 +3,20 @@ function Traveler(name) {
     this.food = 1;
     this.isHealthy = true;
 }
-
-let TravelerAna = new Traveler("Ana")
-
-console.log(TravelerAna)
+let TavelerAna = new Traveler("Ana")
+//console.log(TavelerAna)
 
 function Wagon(capacity) {
-    this.capacity = 4;
+    this.capacity = capacity;
     this.passengers = [];
 }
 
+   //Increase the traveler's food by 2.
 
-
-//Increase the traveler's food by 2.
-//henrietta.hunt(); // get more food
-
-//Traveler.prototype.hunt() = function () {
-//let newFood = this.food++
-
-///}
-
-//console.log(newFood)
+Traveler.prototype.hunt() = function() {
+        return this.food + 2;
+        console.log("get more food")
+};
+console.log(TavelerAna)
+TavelerAna.hunt()
+console.log(TavelerAna)
